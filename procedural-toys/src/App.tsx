@@ -3,6 +3,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Layout } from "./Layout";
 import "./style/index.scss";
+import { LimiterVisualizer } from "./toys/limiter-visual/LimiterVisualizer";
 
 function App() {
     return (
@@ -11,7 +12,7 @@ function App() {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Layout />}>
-                        <Route index element={<></>} />
+                        <Route index element={<LimiterVisualizer />} />
                     </Route>
                 </Routes>
             </BrowserRouter>

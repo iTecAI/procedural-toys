@@ -9,11 +9,19 @@
 
     .tabs {
         height: 48px;
+
+        .MuiButtonBase-root {
+            margin-top: -16px;
+        }
     }
 
     .layout-content {
         display: inline-block;
         height: calc(100vh - 48px);
         width: 100vw;
+        position: absolute;
+        top: 48px;
+        left: 0px;
+        background-color: white;
     }
 }
