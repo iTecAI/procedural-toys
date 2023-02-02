@@ -1,11 +1,5 @@
 import { Grid } from "../components/grid/Grid";
-import {
-    Box as _Box,
-    Instance,
-    Instances,
-    Merged,
-    OrbitControls,
-} from "@react-three/drei";
+import { Instance, Instances, OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import {
     Button,
@@ -21,9 +15,6 @@ import {
 import { useState } from "react";
 import { ClusterParameters, generateCluster } from "../generators/cluster";
 import { Stack } from "@mui/system";
-import * as THREE from "three";
-
-const Box: any = _Box;
 
 function GeneratorRenderer(props: ClusterParameters) {
     const points = generateCluster(props);
