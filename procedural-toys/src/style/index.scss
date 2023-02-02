@@ -23,5 +23,22 @@
         top: 48px;
         left: 0px;
         background-color: white;
+
+        .controls {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            display: inline-block;
+            width: fit-content;
+            height: fit-content;
+            padding: 16px;
+            opacity: 0.5;
+            transition: opacity 0.2s !important;
+            z-index: 100;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
     }
 }

@@ -54,6 +54,7 @@
     ]
   },
   "devDependencies": {
+    "@types/three": "^0.149.0",
     "node-sass": "^8.0.0"
   }
 }

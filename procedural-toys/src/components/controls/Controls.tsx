@@ -2,7 +2,6 @@ import { Button, Paper } from "@mui/material";
 import { Stack } from "@mui/system";
 import { isEqual } from "lodash";
 import { Children, cloneElement, ReactNode, useEffect, useState } from "react";
-import "./style.scss";
 
 export function Controls<T = any>(props: {
     value: T;
