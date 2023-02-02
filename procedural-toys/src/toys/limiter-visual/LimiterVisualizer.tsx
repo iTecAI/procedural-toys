@@ -55,6 +55,8 @@ function ProbPlot(props: {
                 Math.abs(1 * probs[0] * probs[1] * probs[2]) >= props.threshold
             ) {
                 newPositions.push(c);
+            } else {
+                i--;
             }
         }
         setPositions(newPositions);
@@ -120,13 +122,14 @@ export function LimiterVisualizer() {
                 style={{ zIndex: 99 }}
             >
                 <ambientLight intensity={0.5} />
+                <pointLight position={[-10, 10, -10]} />
                 <mesh>
                     <Grid rotation={[0, 0, 0]} axis="X" />
                     <Grid rotation={[Math.PI / 2, 0, 0]} axis="Y" />
                     <Grid rotation={[0, Math.PI, Math.PI / 2]} axis="Z" />
                 </mesh>
                 <ProbPlot
-                    count={2500}
+                    count={1000}
                     scale={Number.parseFloat(controls.scale)}
                     threshold={Number.parseFloat(controls.threshold)}
                     xf={functions.x}
